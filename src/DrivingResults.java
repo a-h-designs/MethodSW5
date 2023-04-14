@@ -2,9 +2,9 @@ public class DrivingResults {
     static void checkResults(int results){
         // if age less than 18, download permitted
         if (results > 43) {
-            System.out.println("Congratulations, you have passed the MCQ Driving Test");
+            System.out.println("Congratulations, you have passed the MCQ Driving Test with a score of " + results);
         } else {
-            System.out.println("Unfortunately you have not passed the MCQ Driving Test this time. Better luck next time.");
+            System.out.println("Unfortunately you have not passed the MCQ Driving Test this time, your score was " + results + ". Better luck next time.");
         }
     }
 
