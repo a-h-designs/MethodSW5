@@ -26,6 +26,7 @@ public class MyCalculator {
 
     // main method
     public static void main(String[] args) {
+        System.out.println("       ----- Simple Calculator -----\nEnter 2 numbers and let me work out the answers.\n");
         // create scanner object
         Scanner sc = new Scanner(System.in);
         // ask user to enter the first number, create integer variable num1 to read this input
@@ -36,9 +37,9 @@ public class MyCalculator {
         int y = sc.nextInt();
         // method calls to add, subtract, multiply and divide the numbers, print the result
         System.out.println("Results:");
-        System.out.println(addMethod(x, y));
-        System.out.println(subtractMethod(x, y));
-        System.out.println(multiplyMethod(x, y));
-        System.out.println(divideMethod(x, y));
+        System.out.println(x + " + " + y + " = " + addMethod(x, y));
+        System.out.println(x + " - " + y + " = " + subtractMethod(x, y));
+        System.out.println(x + " * " + y + " = " + multiplyMethod(x, y));
+        System.out.println(x + " / " + y + " = " + divideMethod(x, y));
     }
 }
